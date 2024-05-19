@@ -1,8 +1,18 @@
-# React + Vite
+# WorldWise
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project for saving your favourite places from vacations on the map
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project was developed to practice advanced React skills, such as React Router, Context API, and advanced patterns.
+
+## Installation
+
+To run the project locally, follow the steps:
+  1. Clone the repository:  `git clone [https://github.com/IlianCholpanov/WorldWise.git]`
+  2. Navigate to the project directory: cd WorldWise
+  3. Run `npm install` to install dependencies.
+  4. Run `npm run dev` to start the project.
+
+
+![image](https://github.com/IlianCholpanov/WorldWise/assets/123170166/6880ea26-564b-42f6-a401-3bef454f5418)
