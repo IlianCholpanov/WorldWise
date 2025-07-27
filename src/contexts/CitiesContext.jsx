@@ -6,7 +6,7 @@ import {
   useCallback,
 } from "react";
 
-const BASE_URL = "/.netlify/functions/api";
+const BASE_URL = "http://localhost:9000";
 
 const CitiesContext = createContext();
 
@@ -50,7 +50,7 @@ function reducer(state, action) {
     case "city/deleted":
       return {
         ...state,
-        isLoading: false,
+        isloading: false,
         cities: state.cities.filter((city) => city.id !== action.payload),
         currentCity: {},
       };
@@ -81,7 +81,7 @@ function CitiesProvider({ children }) {
     async function fetchCities() {
       dispatch({ type: "loading" });
       try {
-        const res = await fetch(`${BASE_URL}?type=cities`);
+        const res = await fetch(`${BASE_URL}/cities `);
         const data = await res.json();
         dispatch({ type: "cities/loaded", payload: data });
       } catch {
@@ -101,7 +101,7 @@ function CitiesProvider({ children }) {
       dispatch({ type: "loading" });
 
       try {
-        const res = await fetch(`${BASE_URL}?type=cities&id=${id}`);
+        const res = await fetch(`${BASE_URL}/cities/${id} `);
         const data = await res.json();
         dispatch({ type: "city/loaded", payload: data });
       } catch {
